@@ -1,18 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  theme: {
-    extend: {
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        raleway: ['Raleway', 'sans-serif'],
-      },
-      colors: {
-        mainColor: '#145887',
-        secondColor: '#EC1B30',
-      },
+export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
+export const theme = {
+  extend: {
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+      raleway: ["Raleway", "sans-serif"],
+      dm: ["DM Serif Display", "sans-serif"],      
+    },
+    colors: {
+      mainColor: "rgb(59 130 246)",
+      mainColorDarker: "rgb(37 99 235)",
     },
   },
-  plugins: [],
-}
-
+};
